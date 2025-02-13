@@ -1,3 +1,11 @@
+require 'yaml'
+
+data_file = "#{__dir__}/data.yaml"
+data = YAML.safe_load(File.read(data_file))
+
+readme_content = []
+
+readme_content << <<EOF
 # Awesome ER Diagrams
 
 [![Awesome](_static/awesome.png)](https://github.com/sindresorhus/awesome)
@@ -12,9 +20,23 @@ Discover a curated selection of [Entity-Relationship Diagrams (ERDs)](https://li
 
 ## Project List
 
+EOF
 
-### Communication - Social Networks and Forums
+data['items_headline_genres'].each do |genre|
+  items = data['items'].select { |item| item['headline_genres'].include?(genre) }
 
-- [mastodon](https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS) Your self-hosted, globally interconnected microblogging community.
-  - **Schema Highlights:** This project features a comprehensive schema of tables for managing users, statuses, and media attachments. It accommodates multi-tenant data through tables for users, accounts, templates, and submissions. The schema ensures data integrity through foreign keys and indexes, while providing dedicated support for event tracking, OAuth, file attachments, and webhooks. This demonstrates a robust, form-driven application flow. `99 tables`. ([Source Code](https://github.com/mastodon/mastodon))
+  next if items.empty?
 
+  readme_content << "### #{genre}\n"
+
+  items.each do |item|
+    readme_content << "- [#{item['title']}](#{item['liam_erd_web_url']}) #{item['app_description'].chomp}"
+    readme_content << "  - **Schema Highlights:** #{item['erd_description'].chomp} `#{item['table_count']} tables`. ([Source Code](#{item['repo']}))"
+  end
+
+  readme_content << "\n"
+end
+
+File.write("#{__dir__}/../README.md", readme_content.join("\n"))
+
+puts "README.md has been generated."
