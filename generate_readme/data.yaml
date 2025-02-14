@@ -1,17 +1,34 @@
 ---
-# Headline order
+
+# items_headline_genres.
+#
+# Contributors: If you want to propose a new category, add it to the array below.
 items_headline_genres:
 - "Communication - Social Networks and Forums"
 
-# Items
+
+# items.
+#
+# Contributors: When adding a new item, include the following fields.
+# - title: The project's title (e.g., Mastodon)
+#   repo: The repository URL (e.g., https://github.com/mastodon/mastodon)
+#   liam_erd_web_url: The corresponding Liam ERD page URL
+#     (e.g., https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS)
+#   app_description: A brief description of the project.
+#   erd_description: A summary of the entity-relationship diagram (ERD).
+#   headline_genres: The category or categories the project belongs to.
+#     Ensure the values match an entry in `items_headline_genres`.
+#   table_count: The total number of tables in the database.
+#   checked_at: The date when this information was last verified (ISO 8601 format).
+
 items:
-- title: mastodon # title of the project.
+- title: mastodon
   repo: https://github.com/mastodon/mastodon
   liam_erd_web_url: https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS
-  app_description: Your self-hosted, globally interconnected microblogging community. # description of the project
-  erd_description: | # erd summary
+  app_description: Your self-hosted, globally interconnected microblogging community.
+  erd_description: |
     This project features a comprehensive schema of tables for managing users, statuses, and media attachments. It accommodates multi-tenant data through tables for users, accounts, templates, and submissions. The schema ensures data integrity through foreign keys and indexes, while providing dedicated support for event tracking, OAuth, file attachments, and webhooks. This demonstrates a robust, form-driven application flow.
   headline_genres:
   - "Communication - Social Networks and Forums"
   table_count: 99
-  checked_at: '2025-02-12' # ISO 8601 Date
+  checked_at: '2025-02-12'

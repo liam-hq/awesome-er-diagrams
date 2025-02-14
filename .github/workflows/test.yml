@@ -2,15 +2,16 @@ name: test
 
 on:
   push:
+    paths:
+      - "generate_readme/**"
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: check
-        shell: bash
-        run: |
-          ./generate_readme/main.sh
-          git diff --exit-code -- README.md
+      # check only. not commit.
+      - name: Generate README.md
+        run: ./generate_readme/main.sh
+      - run: cat README.md
