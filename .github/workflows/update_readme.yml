@@ -1,0 +1,25 @@
+name: update_readme
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "generate_readme/**"
+      - "!README.md" # Not strictly necessary, but added as a safeguard to prevent accidental infinite loops caused by README.md changes.
+  workflow_dispatch:
+
+jobs:
+  update_readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate README.md
+        run: ./generate_readme/main.sh
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Auto-update README" || exit 0
+          git push origin main
