@@ -7,15 +7,11 @@ items_headline_genres:
 items:
 - title: mastodon # title of the project.
   repo: https://github.com/mastodon/mastodon
-  liam_erd_format: schemarb
   liam_erd_web_url: https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS
-  url: null # url which represents the ER Diagram
   app_description: Your self-hosted, globally interconnected microblogging community. # description of the project
   erd_description: | # erd summary
     This project features a comprehensive schema of tables for managing users, statuses, and media attachments. It accommodates multi-tenant data through tables for users, accounts, templates, and submissions. The schema ensures data integrity through foreign keys and indexes, while providing dedicated support for event tracking, OAuth, file attachments, and webhooks. This demonstrates a robust, form-driven application flow.
   headline_genres:
   - "Communication - Social Networks and Forums"
-  keywords: []
   table_count: 99
   checked_at: '2025-02-12' # ISO 8601 Date
-  oss: true # source repo license
