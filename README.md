@@ -1,3 +1,5 @@
+<!-- This README.md file is auto-generated. Please refer to `CONTRIBUTING.md` for update instructions. -->
+
 # Awesome ER Diagrams
 
 [![Awesome](_static/awesome.png)](https://github.com/sindresorhus/awesome)
