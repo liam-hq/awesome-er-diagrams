@@ -18,7 +18,7 @@ items_headline_genres:
 #   app_description: A brief description of the project.
 #   schema_technical_terms: An array of technical characteristics of the database schema
 #     (e.g., ["52 tables", "PostgreSQL", "Rails", "100+ FK", "bigint"])
-#   features_description: A comma-separated list of main application features
+#   feature_description: A comma-separated list of main application features
 #     (e.g., "Account Management, Timelines, Notifications")
 #   erd_description: A summary of the entity-relationship diagram (ERD).
 #   headline_genres: The category or categories the project belongs to.
