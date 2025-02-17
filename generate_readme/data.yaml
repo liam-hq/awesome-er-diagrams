@@ -5,6 +5,7 @@
 # Contributors: If you want to propose a new category, add it to the array below.
 items_headline_genres:
 - "Communication - Social Networks and Forums"
+- "Money, Budgeting & Management"
 
 
 # items.
@@ -15,6 +16,10 @@ items_headline_genres:
 #   liam_erd_web_url: The corresponding Liam ERD page URL
 #     (e.g., https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS)
 #   app_description: A brief description of the project.
+#   schema_technical_terms: An array of technical characteristics of the database schema
+#     (e.g., ["52 tables", "PostgreSQL", "Rails", "100+ FK", "bigint"])
+#   feature_description: Main application features as a comma-separated list, or a brief descriptive sentence
+#     (e.g., "Account Management, Timelines, Notifications")
 #   erd_description: A summary of the entity-relationship diagram (ERD).
 #   headline_genres: The category or categories the project belongs to.
 #     Ensure the values match an entry in `items_headline_genres`.
@@ -26,9 +31,29 @@ items:
   repo: https://github.com/mastodon/mastodon
   liam_erd_web_url: https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS
   app_description: Your self-hosted, globally interconnected microblogging community.
-  erd_description: |
-    This project features a comprehensive schema of tables for managing users, statuses, and media attachments. It accommodates multi-tenant data through tables for users, accounts, templates, and submissions. The schema ensures data integrity through foreign keys and indexes, while providing dedicated support for event tracking, OAuth, file attachments, and webhooks. This demonstrates a robust, form-driven application flow.
+  schema_technical_terms:
+  - "PostgreSQL"
+  - "Rails"
+  - "100+ FK"
+  - "bigint"
+  feature_description: "Account Management, Timelines, Notifications, Conversations, Relationships, Content Filtering, Distributed Federation"
   headline_genres:
   - "Communication - Social Networks and Forums"
   table_count: 99
   checked_at: '2025-02-12'
+- title: "Maybe"
+  repo: "https://github.com/maybe-finance/maybe"
+  liam_erd_web_url: "https://liambx.com/erd/p/github.com/maybe-finance/maybe/blob/main/db/schema.rb"
+  app_description: "The OS for personal finance"
+  schema_technical_terms:
+    - "PostgreSQL"
+    - "Rails"
+    - "Multi-Tenancy"
+    - "Async Jobs"
+    - "uuid"
+    - "jsonb"
+  feature_description: "Bank Aggregation, Budgeting, Investments, Payment Tracking, Multi-Tenancy, Data Enrichment, Data Syncing"
+  headline_genres:
+    - "Money, Budgeting & Management"
+  table_count: 52
+  checked_at: "2025-02-17"

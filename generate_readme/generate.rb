@@ -16,7 +16,7 @@ Discover a curated selection of [Entity-Relationship Diagrams (ERDs)](https://li
 
 ## Why Explore These?
 
-- **Streamline Onboarding & Contributions**: By visualizing a database schema, you can quickly comprehend an open-source project’s structure, making it easier to submit valuable commits and stay engaged in the development process.
+- **Streamline Onboarding & Contributions**: By visualizing a database schema, you can quickly comprehend an open-source project's structure, making it easier to submit valuable commits and stay engaged in the development process.
 - **Refactoring & Design Inspiration**: Observe how various projects design their data models, define foreign keys, and optimize performance—sparking fresh ideas for your own applications.
 - **Hands-On Database Learning**: Compare different schema designs to strengthen your database modeling skills and deepen your understanding of best practices.
 
@@ -32,8 +32,9 @@ data['items_headline_genres'].each do |genre|
   readme_content << "### #{genre}\n"
 
   items.each do |item|
-    readme_content << "- [#{item['title']}](#{item['liam_erd_web_url']}) #{item['app_description'].chomp}"
-    readme_content << "  - **Schema Highlights:** #{item['erd_description'].chomp} `#{item['table_count']} tables`. ([Source Code](#{item['repo']}))"
+    readme_content << "- [#{item['title']}](#{item['liam_erd_web_url']}): #{item['app_description'].chomp} ([Source Code](#{item['repo']}))"
+    readme_content << "  - `#{item['table_count']} tables` / `#{item['schema_technical_terms'].join('` / `')}` "
+    readme_content << "  - #{item['feature_description']}"
   end
 
   readme_content << "\n"
