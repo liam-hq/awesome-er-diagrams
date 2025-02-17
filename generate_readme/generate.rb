@@ -33,7 +33,7 @@ data['items_headline_genres'].each do |genre|
 
   items.each do |item|
     readme_content << "- [#{item['title']}](#{item['liam_erd_web_url']}): #{item['app_description'].chomp} ([Source Code](#{item['repo']}))"
-    readme_content << "  - `#{item['schema_technical_terms'].join('` / `')}` "
+    readme_content << "  - `#{item['table_count']} tables` / `#{item['schema_technical_terms'].join('` / `')}` "
     readme_content << "  - #{item['feature_description']}"
   end
 

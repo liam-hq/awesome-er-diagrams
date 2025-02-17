@@ -32,7 +32,6 @@ items:
   liam_erd_web_url: https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS
   app_description: Your self-hosted, globally interconnected microblogging community.
   schema_technical_terms:
-  - "99 tables"
   - "PostgreSQL"
   - "Rails"
   - "100+ FK"
@@ -47,7 +46,6 @@ items:
   liam_erd_web_url: "https://liambx.com/erd/p/github.com/maybe-finance/maybe/blob/main/db/schema.rb"
   app_description: "The OS for personal finance"
   schema_technical_terms:
-    - "52 tables"
     - "PostgreSQL"
     - "Rails"
     - "Multi-Tenancy"
