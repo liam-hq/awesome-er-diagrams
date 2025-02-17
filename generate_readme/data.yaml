@@ -5,6 +5,7 @@
 # Contributors: If you want to propose a new category, add it to the array below.
 items_headline_genres:
 - "Communication - Social Networks and Forums"
+- "Money, Budgeting & Management"
 
 
 # items.
@@ -41,3 +42,20 @@ items:
   - "Communication - Social Networks and Forums"
   table_count: 99
   checked_at: '2025-02-12'
+- title: "Maybe"
+  repo: "https://github.com/maybe-finance/maybe"
+  liam_erd_web_url: "https://liambx.com/erd/p/github.com/maybe-finance/maybe/blob/main/db/schema.rb"
+  app_description: "The OS for personal finance"
+  schema_technical_terms:
+    - "52 tables"
+    - "PostgreSQL"
+    - "Rails"
+    - "Multi-Tenancy"
+    - "Async Jobs"
+    - "uuid"
+    - "jsonb"
+  feature_description: "Bank Aggregation, Budgeting, Investments, Payment Tracking, Multi-Tenancy, Data Enrichment, Data Syncing"
+  headline_genres:
+    - "Money, Budgeting & Management"
+  table_count: 52
+  checked_at: "2025-02-17"
