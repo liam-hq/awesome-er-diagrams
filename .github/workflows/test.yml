@@ -3,6 +3,7 @@ name: test
 on:
   pull_request:
     paths:
+      - ".github/workflows/test.yml"
       - "generate_readme/**"
   workflow_dispatch:
 
