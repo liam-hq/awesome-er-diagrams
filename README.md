@@ -8,7 +8,7 @@ Discover a curated selection of [Entity-Relationship Diagrams (ERDs)](https://li
 
 ## Why Explore These?
 
-- **Streamline Onboarding & Contributions**: By visualizing a database schema, you can quickly comprehend an open-source project’s structure, making it easier to submit valuable commits and stay engaged in the development process.
+- **Streamline Onboarding & Contributions**: By visualizing a database schema, you can quickly comprehend an open-source project's structure, making it easier to submit valuable commits and stay engaged in the development process.
 - **Refactoring & Design Inspiration**: Observe how various projects design their data models, define foreign keys, and optimize performance—sparking fresh ideas for your own applications.
 - **Hands-On Database Learning**: Compare different schema designs to strengthen your database modeling skills and deepen your understanding of best practices.
 
@@ -17,6 +17,14 @@ Discover a curated selection of [Entity-Relationship Diagrams (ERDs)](https://li
 
 ### Communication - Social Networks and Forums
 
-- [mastodon](https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS) Your self-hosted, globally interconnected microblogging community.
-  - **Schema Highlights:** This project features a comprehensive schema of tables for managing users, statuses, and media attachments. It accommodates multi-tenant data through tables for users, accounts, templates, and submissions. The schema ensures data integrity through foreign keys and indexes, while providing dedicated support for event tracking, OAuth, file attachments, and webhooks. This demonstrates a robust, form-driven application flow. `99 tables`. ([Source Code](https://github.com/mastodon/mastodon))
+- [mastodon](https://liambx.com/erd/p/github.com/mastodon/mastodon/blob/main/db/schema.rb?showMode=ALL_FIELDS): Your self-hosted, globally interconnected microblogging community. ([Source Code](https://github.com/mastodon/mastodon))
+  - `99 tables` / `PostgreSQL` / `Rails` / `100+ FK` / `bigint` 
+  - Account Management, Timelines, Notifications, Conversations, Relationships, Content Filtering, Distributed Federation
+
+
+### Money, Budgeting & Management
+
+- [Maybe](https://liambx.com/erd/p/github.com/maybe-finance/maybe/blob/main/db/schema.rb): The OS for personal finance ([Source Code](https://github.com/maybe-finance/maybe))
+  - `52 tables` / `PostgreSQL` / `Rails` / `Multi-Tenancy` / `Async Jobs` / `uuid` / `jsonb` 
+  - Bank Aggregation, Budgeting, Investments, Payment Tracking, Multi-Tenancy, Data Enrichment, Data Syncing
 
