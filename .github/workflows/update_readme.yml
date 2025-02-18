@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "generate_readme/**"
+      - ".github/workflows/update_readme.yml"
       - "!README.md" # Not strictly necessary, but added as a safeguard to prevent accidental infinite loops caused by README.md changes.
   workflow_dispatch:
 
