@@ -13,6 +13,9 @@ concurrency:
   group: update_readme
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   update_readme:
     runs-on: ubuntu-latest
