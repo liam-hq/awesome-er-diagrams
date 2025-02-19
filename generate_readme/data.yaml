@@ -6,7 +6,7 @@
 items_headline_genres:
 - "Communication - Social Networks and Forums"
 - "Money, Budgeting & Management"
-
+- "Document Management"
 
 # items.
 #
@@ -57,3 +57,19 @@ items:
     - "Money, Budgeting & Management"
   table_count: 52
   checked_at: "2025-02-17"
+- title: "DocuSeal"
+  repo: "https://github.com/docusealco/docuseal"
+  liam_erd_web_url: "https://liambx.com/erd/p/github.com/docusealco/docuseal/blob/master/db/schema.rb"
+  app_description: "Open source DocuSign alternative. Create, fill, and sign digital documents ✍️"
+  schema_technical_terms:
+    - "PostgreSQL"
+    - "Rails"
+    - "31 FK"
+    - "bigserial"
+    - "Many-to-many relationships"
+    - "Multi-tenancy"
+  feature_description: "Document signing, template management, user management, OAuth authentication, webhooks"
+  headline_genres:
+    - "Document Management"
+  table_count: 27
+  checked_at: "2025-02-18"
