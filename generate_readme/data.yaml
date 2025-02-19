@@ -68,7 +68,6 @@ items:
     - "bigserial"
     - "Many-to-many relationships"
     - "Multi-tenancy"
-    - "Doorkeeper"
   feature_description: "Document signing, template management, user management, OAuth authentication, webhooks"
   headline_genres:
     - "Document Management"
