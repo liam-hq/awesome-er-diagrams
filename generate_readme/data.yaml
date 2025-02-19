@@ -73,3 +73,18 @@ items:
     - "Document Management"
   table_count: 27
   checked_at: "2025-02-18"
+- title: "dawarich"
+  repo: "https://github.com/Freika/dawarich"
+  liam_erd_web_url: "https://liambx.com/erd/p/github.com/Freika/dawarich/blob/master/db/schema.rb"
+  app_description: "Self-hostable alternative to Google Location History"
+  schema_technical_terms:
+    - "PostgreSQL"
+    - "Rails"
+    - "bigint"
+    - "jsonb"
+    - "Active Storage"
+  feature_description: "User Management, Points, Visits, Places, Trips, Notifications, Data Import/Export, Statistics"
+  headline_genres:
+    - "Location Tracking and Analytics"
+  table_count: 16
+  checked_at: "2025-02-19"
