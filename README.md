@@ -28,3 +28,10 @@ Discover a curated selection of [Entity-Relationship Diagrams (ERDs)](https://li
   - `52 tables` / `PostgreSQL` / `Rails` / `Multi-Tenancy` / `Async Jobs` / `uuid` / `jsonb` 
   - Bank Aggregation, Budgeting, Investments, Payment Tracking, Multi-Tenancy, Data Enrichment, Data Syncing
 
+
+### Document Management
+
+- [DocuSeal](https://liambx.com/erd/p/github.com/docusealco/docuseal/blob/master/db/schema.rb): Open source DocuSign alternative. Create, fill, and sign digital documents ✍️ ([Source Code](https://github.com/docusealco/docuseal))
+  - `27 tables` / `PostgreSQL` / `Rails` / `31 FK` / `bigserial` / `Many-to-many relationships` / `Multi-tenancy` 
+  - Document signing, template management, user management, OAuth authentication, webhooks
+
