@@ -35,3 +35,10 @@ Discover a curated selection of [Entity-Relationship Diagrams (ERDs)](https://li
   - `27 tables` / `PostgreSQL` / `Rails` / `31 FK` / `bigserial` / `Many-to-many relationships` / `Multi-tenancy` 
   - Document signing, template management, user management, OAuth authentication, webhooks
 
+
+### Location Tracking and Analytics
+
+- [dawarich](https://liambx.com/erd/p/github.com/Freika/dawarich/blob/master/db/schema.rb): Self-hostable alternative to Google Location History ([Source Code](https://github.com/Freika/dawarich))
+  - `16 tables` / `PostgreSQL` / `Rails` / `bigint` / `jsonb` / `Active Storage` 
+  - User Management, Points, Visits, Places, Trips, Notifications, Data Import/Export, Statistics
+
