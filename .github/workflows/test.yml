@@ -29,7 +29,7 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
       - name: Comment on PR
         if: github.event_name == 'pull_request'
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@52423e01640425a022ef5fd42c6fb5f633a02728 # v2.9.1
         with:
           header: preview
           message: |
